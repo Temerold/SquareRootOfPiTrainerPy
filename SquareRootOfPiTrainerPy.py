@@ -35,7 +35,6 @@ def get_appropriate_sqrt(test):
 if __name__ == "__main__":
     # sourcery skip: avoid-global-variables
 
-    clear = False
     sqrt = square_root(pi, 12)
 
     while True:
@@ -49,6 +48,4 @@ if __name__ == "__main__":
             break
         print("Incorrect! Try again.")
         input(f"Square root of pi: {sqrt}")
-        if clear := True:
-            system("cls")
-            clear = False
+        system("cls")
